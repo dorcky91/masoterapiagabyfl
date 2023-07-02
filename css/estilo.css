@@ -147,7 +147,6 @@ header {
     url("../fotos/top.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 #hero-inicio {
