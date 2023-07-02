@@ -21,6 +21,8 @@
       rel="stylesheet" />
 
     <link rel="stylesheet" href="css/estilo.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="mb-15">
@@ -77,8 +79,13 @@
           <div class="contenido-contacto d-flex">
             <div class="contacto w-50">
               <div class="mb-50">
-                <h2 class="mb-15">Contáctanos</h2>
-                <p>
+                <h2
+                  class="mb-15"
+                  data-aos="fade-right"
+                  data-aos-duration="2000">
+                  Contáctanos
+                </h2>
+                <p data-aos="fade-left" data-aos-duration="3000">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Doloribus, molestias!
                 </p>
@@ -294,5 +301,10 @@
     </div>
 
     <script src="./javascript/main.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

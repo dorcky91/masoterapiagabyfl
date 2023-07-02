@@ -21,6 +21,8 @@
       rel="stylesheet" />
 
     <link rel="stylesheet" href="css/estilo.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <header class="mb-15">
     <div class="contenedor">
@@ -74,16 +76,28 @@
       <div class="contenedor">
         <div id="hero-promocion" class="d-flex">
           <div>
-            <h1>Lorem ipsum dolor si, adipisicing voluptatibus consequtur.</h1>
-            <p>
+            <h1
+              class="mb-30"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              data-aos-offset="0">
+              Lorem ipsum dolor si, adipisicing voluptatibus consequtur.
+            </h1>
+            <p data-aos="fade-up" data-aos-duration="1800">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Recusandae sunt, hic voluptatem in dou.
             </p>
-            <p class="mb-15">
+            <p class="mb-30" data-aos="fade-up" data-aos-duration="2000">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Recusandae sunt, hic voluptatem in dou.
             </p>
-            <a class="btn" href="agendarcita.html">Agendar cita</a>
+            <a
+              class="btn"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              href="agendarcita.html"
+              >Agendar cita</a
+            >
           </div>
         </div>
       </div>
@@ -91,7 +105,7 @@
     <section id="opciones-promocion">
       <div class="contenedor">
         <div class="promociones">
-          <div class="card">
+          <div class="card" data-aos="flip-left" data-aos-duration="3000">
             <img loading="lazy" src="fotos/promocion-1.jpg" alt="" />
             <div class="over-absolute">
               <h2>Lorem ipsum dolor sit amet.</h2>
@@ -105,12 +119,15 @@
             <a href="agendarcita.html">
               <button id="agendar-cita">Agendar Cita</button>
             </a>
-            <h3 class="titulo-promocion">
+            <h3
+              class="titulo-promocion"
+              data-aos="fade-left"
+              data-aos-duration="3000">
               Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
               consectetur.
             </h3>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-right" data-aos-duration="3000">
             <img loading="lazy" src="fotos/promocion-2.jpg" alt="" />
             <div class="over-absolute">
               <h2>Lorem ipsum dolor sit amet.</h2>
@@ -124,12 +141,15 @@
             <a href="agendarcita.html">
               <button id="agendar-cita">Agendar Cita</button>
             </a>
-            <h3 class="titulo-promocion">
+            <h3
+              class="titulo-promocion"
+              data-aos="fade-left"
+              data-aos-duration="3000">
               Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
               consectetur.
             </h3>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left" data-aos-duration="2500">
             <img loading="lazy" src="fotos/promocion-3.jpg" alt="" />
             <div class="over-absolute">
               <h2>Lorem ipsum dolor sit amet.</h2>
@@ -143,7 +163,10 @@
             <a href="agendarcita.html">
               <button id="agendar-cita">Agendar Cita</button>
             </a>
-            <h3 class="titulo-promocion">
+            <h3
+              class="titulo-promocion"
+              data-aos="fade-left"
+              data-aos-duration="3000">
               Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
               consectetur.
             </h3>
@@ -256,5 +279,10 @@
       </div>
     </footer>
     <script src="./javascript/main.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

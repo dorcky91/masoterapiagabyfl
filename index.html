@@ -21,6 +21,8 @@
       rel="stylesheet" />
 
     <link rel="stylesheet" href="css/estilo.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="mb-15">
@@ -76,17 +78,31 @@
         <div class="contenedor">
           <div id="hero-inicio" class="d-flex">
             <div>
-              <h1>
+              <h1
+                class="mb-30"
+                data-aos="fade-down"
+                data-aos-duration="1500"
+                data-aos-easing="linear"
+                data-aos-offset="0">
                 Lorem ipsum dolor si, adipisicing.
                 <span>Voluptatibus</span> consequtur.
               </h1>
-              <p class="mb-15">
+              <p
+                class="mb-15 p-hero"
+                data-aos="flip-up"
+                data-aos-duration="2500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Recusandae sunt, hic voluptatem in dou. Lorem ipsum dolor sit
                 amet consectetur adipisicing elit. Recusandae sunt, hic
                 voluptatem in dou.
               </p>
-              <a class="btn" href="promociones.html">Ver Promociones</a>
+              <a
+                class="btn"
+                data-aos="zoom-in-up"
+                data-aos-duration="3000"
+                href="promociones.html"
+                >Ver Promociones</a
+              >
             </div>
           </div>
         </div>
@@ -95,8 +111,10 @@
       <section id="seccion-descripcion" class="descripcion">
         <div class="contenedor">
           <div class="descripcion-contenido">
-            <h1>Lorem ipsum dolor sit amet.</h1>
-            <p>
+            <h1 data-aos="fade-left" data-aos-duration="3000">
+              Lorem ipsum dolor sit amet.
+            </h1>
+            <p data-aos="fade-right" data-aos-duration="2500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, vero
               similique natus eos aliquam mollitia, nam repellendus odio
               deserunt cupiditate eaque, omnis neque maiores corporis impedit
@@ -110,11 +128,11 @@
 
       <section id="seccion-card">
         <div class="contenedor">
-          <div class="d-flex">
+          <div class="d-flex" data-aos="zoom-in-up" data-aos-duration="3000">
             <div class="card izquierdo">
               <img
                 loading="lazy"
-                class="mb-15"
+                class="mb-15 animacion imagen-left"
                 src="fotos/rounded.jpg"
                 alt="" />
               <div class="texto">
@@ -129,7 +147,7 @@
             <div class="card medio">
               <img
                 loading="lazy"
-                class="mb-15"
+                class="mb-15 animacion imagen-medio"
                 src="fotos/rounded-2.jpg"
                 alt="" />
               <div class="texto">
@@ -144,7 +162,7 @@
             <div class="card derecho">
               <img
                 loading="lazy"
-                class="mb-15"
+                class="mb-15 animacion imagen-right"
                 src="fotos/rounded-1.jpg"
                 alt="" />
               <div class="texto">
@@ -162,7 +180,7 @@
       <section id="seccion-detalle">
         <div class="contenedor">
           <div class="d-flex">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="1500">
               <img loading="lazy" src="fotos/relajante.png" alt="" />
               <div class="card-cuerpo mb-15">
                 <h4>Lorem, ipsum dolor.</h4>
@@ -173,7 +191,7 @@
               </p>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="flip-down" data-aos-duration="2500">
               <img loading="lazy" src="fotos/vela.png" alt="" />
               <div class="card-cuerpo mb-15">
                 <h4>Lorem, ipsum dolor.</h4>
@@ -184,7 +202,7 @@
               </p>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="3000">
               <img loading="lazy" src="fotos/sueco.png" alt="" />
               <div class="card-cuerpo mb-15">
                 <h4>Lorem, ipsum dolor.</h4>
@@ -202,11 +220,16 @@
         <div class="contenedor">
           <div class="masaje">
             <div class="card-resumen mb-15">
-              <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+              <h1 data-aos="zoom-in-left" data-aos-duration="1500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </h1>
             </div>
 
             <div class="d-flex separacion">
-              <div class="beneficio">
+              <div
+                class="beneficio"
+                data-aos="fade-up"
+                data-aos-duration="1500">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                   illum illo minus perferendis dignissimos ad obcaecati suscipit
@@ -215,7 +238,10 @@
                 </p>
               </div>
 
-              <div class="beneficio">
+              <div
+                class="beneficio"
+                data-aos="fade-down"
+                data-aos-duration="2500">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
                   nihil dolores expedita obcaecati laboriosam quam repellat
@@ -223,7 +249,10 @@
                 </p>
               </div>
 
-              <div id="beneficio-imagen">
+              <div
+                id="beneficio-imagen"
+                data-aos="zoom-in-right"
+                data-aos-duration="3000">
                 <img loading="lazy" src="fotos/masaje.jpg" alt="" />
               </div>
             </div>
@@ -234,7 +263,10 @@
       <section id="seccion-testimonio">
         <div class="contenedor">
           <div class="contenedor-testimonio d-flex">
-            <div class="opinion1 w-33">
+            <div
+              class="opinion1 w-33"
+              data-aos="fade-up"
+              data-aos-duration="2000">
               <img
                 loading="lazy"
                 class="mb-15"
@@ -253,7 +285,10 @@
               </div>
             </div>
 
-            <div class="opinion2 w-33">
+            <div
+              class="opinion2 w-33"
+              data-aos="fade-down"
+              data-aos-duration="2500">
               <img
                 loading="lazy"
                 class="mb-15"
@@ -272,7 +307,11 @@
               </div>
             </div>
 
-            <div class="opinion3 w-33">
+            <div
+              class="opinion3 w-33"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="300">
               <img
                 loading="lazy"
                 class="mb-15"
@@ -405,5 +444,10 @@
     </div>
 
     <script src="./javascript/main.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

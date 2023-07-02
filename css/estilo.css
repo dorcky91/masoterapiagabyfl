@@ -198,7 +198,21 @@ header {
   box-shadow: 0 0 0 5px rgba(232, 221, 213, 0.8);
   padding: 8px;
   background-color: #fff;
+  /* opacity: 0; */
+  /* transform: scale(0.9); */
+  /* transition: 0.1s ease-in-out all; */
 }
+
+/* #seccion-card .card img.imagen-left {
+  transform: translateX(-100px);
+  transition: 0.1s ease-in-out all;
+} */
+
+/* #seccion-card .card img.visible {
+  opacity: 1;
+  transform: scale(1);
+  transform: translateX(0);
+} */
 
 .card.izquierdo {
   transform: translateX(20%);
@@ -1001,6 +1015,11 @@ footer .fin {
 } */
 
 @media (max-width: 576px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
   #navegacion {
     display: block;
     background-color: rgb(229, 238, 238);
@@ -1074,6 +1093,16 @@ footer .fin {
   header .contenedor,
   #seccion-top .contenedor {
     padding: 0;
+  }
+
+  #seccion-top .contenedor {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.4)
+      ),
+      url("../fotos/top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .top img {
@@ -1293,6 +1322,12 @@ footer .fin {
     background-attachment: inherit;
   }
 
+  #seccion-paquetes .contenedor {
+    background: url(../fotos/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   #iconos-movil a {
     font-size: 35px;
     color: #de3a68;
@@ -1324,6 +1359,13 @@ footer .fin {
     background-color: transparent;
   }
 
+  #seccion-promociones .contenedor {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../fotos/promociones-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   #hero-promocion {
     padding: 0;
   }
@@ -1342,6 +1384,15 @@ footer .fin {
 
   #opciones-promocion .card img {
     height: 350px;
+  }
+
+  footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../fotos/sueco1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    align-self: center;
   }
 }
 
