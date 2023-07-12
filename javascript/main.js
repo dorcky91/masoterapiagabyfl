@@ -1,14 +1,17 @@
 var btnMenu = document.getElementById("navegacion-movil");
 var btnCerrar = document.getElementById("cerrar-navegacion");
+var menu = document.getElementById("navegacion");
+var overlay = document.getElementById("overlay");
 
-btnMenu.addEventListener("click", function () {
-  var menu = document.getElementById("navegacion");
+btnMenu.addEventListener("click", controlarNavegacion);
+btnCerrar.addEventListener("click", controlarNavegacion);
+overlay.addEventListener("click", controlarNavegacion);
+
+function controlarNavegacion() {
+  console.log("lol");
   menu.classList.toggle("activo");
-});
-btnCerrar.addEventListener("click", function () {
-  var menu = document.getElementById("navegacion");
-  menu.classList.toggle("activo");
-});
+  overlay.classList.toggle("mostrar");
+}
 
 let animacionImagen = document.querySelectorAll(".animacion");
 
