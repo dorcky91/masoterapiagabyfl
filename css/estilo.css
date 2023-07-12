@@ -1059,18 +1059,18 @@ footer .fin {
   }
 
   #cerrar-navegacion {
-    display: block;
-    font-size: 30px;
+    display: flex;
+    font-size: 35px;
     position: absolute;
     top: 0px;
     right: 0px;
     color: #111;
     padding: 5px 15px;
     cursor: pointer;
-    background-color: rgba(159, 164, 14, 0.1);
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    box-shadow: 0 2px rgba(15, 10, 10, 0.1);
+    /* background-color: rgba(159, 164, 14, 0.1); */
+    /* border-bottom-left-radius: 8px; */
+    /* border-bottom-right-radius: 8px; */
+    box-shadow: 0 4px 0 rgba(15, 10, 10, 0.1);
   }
 
   #navegacion a {
